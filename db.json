@@ -1,48 +1,26 @@
 {
   "RegisteredUser": [
     {
-      "firstName": "",
+      "firstName": "Bala",
       "lastName": "",
       "dob": "",
-      "email": "",
+      "email": "Balak@gmail.com",
       "gender": "",
       "mobile": "",
-      "password": "1",
-      "confirmPassword": "1",
+      "password": "1245",
+      "confirmPassword": "1245",
       "id": 1
     },
     {
-      "firstName": "Bala",
-      "lastName": "krishnan",
-      "dob": "1993-08-23",
-      "email": "balakrsiha44@gmalk.com",
-      "gender": "",
-      "mobile": "4578124578",
-      "password": "qazxswedc",
-      "confirmPassword": "qazxswedc",
-      "id": 2
-    },
-    {
-      "firstName": "bala",
-      "lastName": "krishnann",
-      "dob": "1993-08-23",
-      "email": "balakrishnan417@gmail.com",
-      "gender": "",
-      "mobile": "9702700102",
-      "password": "Blakisn23@",
-      "confirmPassword": "Blakisn23@",
-      "id": 3
-    },
-    {
-      "firstName": "bala",
+      "firstName": "demo",
       "lastName": "",
       "dob": "",
-      "email": "a@a.com",
+      "email": "demo@gmail.com",
       "gender": "",
       "mobile": "",
-      "password": "1",
-      "confirmPassword": "1",
-      "id": 4
+      "password": "demo",
+      "confirmPassword": "demo",
+      "id": 2
     }
   ]
 }

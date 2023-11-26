@@ -35,10 +35,14 @@ const Signup = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    console.log("submitted");
     if (passwordMatch) {
       axios
         .post("http://localhost:3001/RegisteredUser", userDetail)
-        .then((res) => navigate("/"), alert("successfully added"))
+        .then((res) => {
+          alert("successfully added");
+          navigate("/");
+        })
         .catch((err) => console.log(err));
     } else {
       console.log("password does not match");

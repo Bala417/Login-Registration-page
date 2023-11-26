@@ -1,27 +1,23 @@
 import React from "react";
+import { Container } from "react-bootstrap";
 import Nav from "react-bootstrap/Nav";
 
 const Dashboard = () => {
   return (
     <div>
-      <>
-        <Nav className="justify-content-end" activeKey="/home">
-          <Nav.Item>
-            <Nav.Link href="/home">Active</Nav.Link>
-          </Nav.Item>
-          <Nav.Item>
-            <Nav.Link eventKey="link-1">Link</Nav.Link>
-          </Nav.Item>
-          <Nav.Item>
-            <Nav.Link eventKey="link-2">Link</Nav.Link>
-          </Nav.Item>
-          <Nav.Item>
-            <Nav.Link eventKey="disabled" disabled>
-              Disabled
-            </Nav.Link>
-          </Nav.Item>
-        </Nav>
-      </>
+      <Container
+        fluid
+        className="d-flex align-items-center justify-content-center"
+        style={{
+          background:
+            "radial-gradient(closest-side, rgba(255,255,255,1) -100%, rgba(0,128,128,1) 100%)",
+          width: "100vw",
+          color: "white",
+          height: "100vh",
+        }}
+      >
+        <h1 className="text-center">Welcome to Dashboard</h1>
+      </Container>
     </div>
   );
 };

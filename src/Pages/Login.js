@@ -9,6 +9,8 @@ const Login = () => {
     password: "",
   });
   const [userNotExist, setUserNotExist] = useState(false);
+  const [auth, setAuth] = useState(false);
+
   const navigate = useNavigate();
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -29,10 +31,13 @@ const Login = () => {
             data.email === userLogin.email &&
             data.password === userLogin.password
           ) {
-            return navigate("/Dashboard");
-          } else setUserNotExist(true);
+            navigate("/Dashboard");
+            setAuth(!auth);
+          } else {
+            setUserNotExist(true);
+          }
         });
-        return userNotExist && alert("user does not exist");
+        userNotExist && alert("user does not exist");
       })
       .catch((err) => console.log(err));
   };

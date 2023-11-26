@@ -27,6 +27,7 @@
   "scripts": {
     "homepage": "https://Bala417.github.io/Registraion-login",
     "publish": "gh-pages -d src",
+    "server": "json-server --watch db.json --port 3001",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
